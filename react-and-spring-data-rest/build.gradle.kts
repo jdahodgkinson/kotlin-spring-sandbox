@@ -6,6 +6,7 @@ plugins {
     kotlin("jvm") version "1.3.72"
     kotlin("plugin.spring") version "1.3.72"
     kotlin("plugin.jpa") version "1.3.72"
+    application
 }
 
 group = "com.jackhodgkinson"
@@ -27,6 +28,10 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+}
+
+application {
+    mainClass.set("com.jackhodgkinson.payroll.ReactAndSpringDataRestApplicationKt")
 }
 
 tasks.withType<Test> {

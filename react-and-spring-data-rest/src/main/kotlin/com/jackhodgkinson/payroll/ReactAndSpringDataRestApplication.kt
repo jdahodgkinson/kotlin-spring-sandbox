@@ -1,11 +1,11 @@
-package com.jackhodgkinson.reactandspringdatarest
+package com.jackhodgkinson.payroll
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ReactAndSpringDataRestBasicApplication
+class ReactAndSpringDataRestApplication
 
 fun main(args: Array<String>) {
-    runApplication<ReactAndSpringDataRestBasicApplication>(*args)
+    runApplication<ReactAndSpringDataRestApplication>(*args)
 }
